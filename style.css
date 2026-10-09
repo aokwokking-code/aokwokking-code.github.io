@@ -1,0 +1,148 @@
+/* slide: s2-link · indicator 1 · block 0 — the first rule only */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #183333;
+  background: #f8f3e8;
+  font-family: 'DM Sans', 'Trebuchet MS', sans-serif;
+  line-height: 1.5;
+}
+
+header,
+nav,
+main,
+footer {
+  width: min(100% - 2rem, 70rem);
+  margin-inline: auto;
+}
+
+header {
+  position: relative;
+  padding: 1.5rem 1rem 1.25rem;
+  color: #fffaf0;
+  background: #064E4F;
+  border-bottom: 5px solid #e4a853;
+}
+
+header::after {
+  position: absolute;
+  right: 1rem;
+  bottom: -0.7rem;
+  width: 2rem;
+  height: 2rem;
+  content: '';
+  background: #e4a853;
+  border-radius: 50%;
+}
+
+header p {
+  margin: 0.25rem 0;
+}
+
+header p:first-child {
+  font-family: Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+header a {
+  color: #fffaf0;
+  text-decoration: none;
+}
+
+nav {
+  background: #f1dfbd;
+  border-bottom: 1px solid #d5bb8a;
+}
+
+nav ul {
+  display: flex;
+  gap: 0.75rem 1.5rem;
+  margin: 0;
+  padding: 0.75rem 0;
+  list-style: none;
+}
+
+nav a {
+  color: #064E4F;
+  font-weight: 700;
+  text-decoration-thickness: 0.12em;
+  text-underline-offset: 0.2em;
+}
+
+main {
+  min-height: 55vh;
+  padding-block: 2rem;
+  background: linear-gradient(135deg, rgba(255, 250, 240, 0.8), rgba(238, 246, 240, 0.8));
+}
+
+h1 {
+  color: #064E4F;
+  font-family: Georgia, serif;
+  line-height: 1.15;
+}
+
+h1::after {
+  display: block;
+  width: 3.5rem;
+  height: 0.25rem;
+  margin-top: 0.75rem;
+  content: '';
+  background: #e4a853;
+}
+
+h2 {
+  color: #9a4c2e;
+  font-family: Georgia, serif;
+}
+
+main > div {
+  display: inline-block;
+  width: calc(50% - 0.75rem);
+  margin: 0 0.75rem 1.5rem 0;
+  padding: 1rem;
+  vertical-align: top;
+  background: #fffaf0;
+  border: 1px solid #e2d5bd;
+  border-top: 4px solid #e4a853;
+  box-shadow: 0 0.5rem 1.25rem rgba(6, 78, 79, 0.08);
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+}
+
+main table {
+  width: 100%;
+  max-width: 30rem;
+  border-collapse: collapse;
+}
+
+main th,
+main td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #c8d8d5;
+}
+
+footer {
+  padding-block: 1rem;
+  color: #fffaf0;
+  background: #183333;
+  border-top: 5px solid #9a4c2e;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+h1 {
+  color: #064E4F;
+}
